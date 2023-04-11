@@ -43,7 +43,7 @@ export const create = async(req, res) => {
         if (error) {
             return res.json({
                 message: error.details[0].message,
-                
+
             });
         }
         const data = await Product.create(body);
